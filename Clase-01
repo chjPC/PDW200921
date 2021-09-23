@@ -1,0 +1,38 @@
+<!--
+    INICIO DEL DOCUMENTO
+    ! -> CONDICIÓN DEL DOCUMENTO.
+    DOCTYPE -> TIPO DE DOCUMENTO.
+    html -> EL DOCUMENTO ES HTML.
+-->
+<!DOCTYPE html>
+
+<!--
+    html -> ETIQUETA DEL DOCUMENTO HTML.
+    lang -> ATRIBUTO DE LA ETIQUETA PARA EL LENGUAJE.
+    "en" -> VALOR DEL ATRIBUTO
+        * EN = ENGLISH.
+        * ES = ESPAÑOL.
+        * FR = FRANCÉS, ETC.
+-->
+<html lang="es"></html>
+
+<!-- INICIO DE LA COLECCIÓN DE METADATOS -->
+<head></head>
+
+<!-- MOSTRAR EL TITULO DE LA PAGINA WEB -->
+<title></title>
+
+<!--
+    meta -> ETIQUETA DE METADATO.
+    charset -> ATRIBUTO DE DECODIFICACION.
+    "utf-8" -> VALOR PARA ESPAÑOL.
+-->
+<meta charset="utf-8">
+
+<!--
+    meta -> ETIQUETA DE METADATO.
+    name -> ATRIBUTO QUE DA UN NOMBRE AL METADATO.
+    "description" -> VALOR UNA DESCRIPCION DE LA WEB.
+    content -> ATRIBUTO QUE INDICA EL CONTENIDO O PALABRAS CLAVES.
+-->
+<meta name="description" content="DESCRIPCION O PALABRAS CLAVES">
