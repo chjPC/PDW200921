@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI EMPRESA</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="www.google.com" target="_blank">PAGINA DE GOOGLE</a></li>
+        <li>dos</li>
+        <li>tres</li>
+    </ul>
+
+    <ol>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+    </ol>
+
+    <h1>MI NOMBRE</h1>
+    <h2>MI NOMBRE</h2>
+    <h3>MI NOMBRE</h3>
+    <h4>MI NOMBRE</h4>
+    <h5>MI NOMBRE</h5>
+    <h6>MI NOMBRE</h6>
+
+    <p>MI NOMBRE</p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim, aliquam, nulla culpa ad nesciunt earum voluptates molestias vitae magnam impedit architecto dignissimos. Ea pariatur excepturi veritatis, et fugiat quidem!
+        Vel dolorum tenetur architecto fuga recusandae cupiditate dolores et a iste, quisquam aliquid! In blanditiis maiores, sint corrupti excepturi harum voluptatem quibusdam voluptates debitis doloribus esse fuga tenetur. Suscipit, quas.
+    </p>
+
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima aspernatur debitis officia necessitatibus! Dolore corporis blanditiis laborum qui illum in ad nemo numquam corrupti molestias, sed reprehenderit labore. Ipsa.
+        Dolor temporibus provident neque consequuntur! Nesciunt ad consequuntur in animi repudiandae ipsum voluptates quis recusandae quisquam asperiores quae non eum aspernatur, ratione veritatis atque beatae quaerat eius labore ut iste!
+        Minima adipisci dolore eligendi voluptates facilis? Quidem accusantium aspernatur iure voluptate repellendus molestiae mollitia voluptatibus dolor est possimus quod incidunt similique hic nobis, officiis necessitatibus accusamus. Laboriosam doloribus esse magnam.
+    </article>
+
+    <span>MI NOMBRE</span>
+
+    <p><b>MI NOMBRE</b></p>
+
+    <em>MI NOMBRE</em>
+
+    <strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, adipisci?
+    </strong>
+
+    <p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.</p>
+
+    <img src="base-datos.jpg" alt="Imagen 01">
+
+    <form action="">
+        <input type="text">
+        <input type="number">
+        <input type="email">
+        <input type="date">
+        <input type="password">
+        <input type="radio">
+        <input type="checkbox">
+
+        <div>
+            <label>Usuario</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input type="password">
+        </div>
+
+        <select>
+            <option>Varon</option>
+            <option>Mujer</option>
+        </select>
+
+        <select>
+            <option>Seleccione el tipo de documento</option>
+            <option>Documento Nacional de Identidad</option>
+            <option>Pasaporte</option>
+            <option>R.U.C.</option>
+        </select>
+
+        <textarea></textarea>
+
+        <div>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <div>
+                <button type="button">Boton</button>
+                <button type="reset">Restear</button>
+                <button type="sumbit">Enviar</button>
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+
+    </form>
+
+    <!--
+        Atributos de referencias:
+        - class -> Clases para dar estilos a las etiquetas.
+        - id -> Para darle una identidad a la etiqueta y son únicos.
+    -->
+    <div class="christian1"></div>
+    <div class="christian2"></div>
+    
+    <div id="identidad"></div>
+
+</body>
+</html>
