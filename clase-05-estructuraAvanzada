@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta para caracteres especiales -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Meta del responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta de descripción de la empresa -->
+    <meta name="description" content="DATOS DE LA EMPRESA">
+    <!-- Meta del autor -->
+    <meta name="author" content="Christian">
+    <!-- Meta del eslogan de la empresa -->
+    <meta property="og:title" content="">
+
+    <!-- Titulo de la empresa -->
+    <title></title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="">
+
+    <!-- Script para contador de usuarios -->
+    <script></script>
+</head>
+<body>
+
+    <main>
+        
+    </main>
+
+    <!-- Script de toda la web -->
+    <script></script>
+</body>
+</html>
