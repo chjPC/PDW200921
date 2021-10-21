@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta para caracteres especiales -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Meta del responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta de descripción de la empresa -->
+    <meta name="description" content="DATOS DE LA EMPRESA">
+    <!-- Meta del autor -->
+    <meta name="author" content="Christian">
+    <!-- Meta del eslogan de la empresa -->
+    <meta property="og:title" content="">
+
+    <!-- Titulo de la empresa -->
+    <title>Christian Puyen</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+
+    <main class="home">
+
+        <header class="home__header"> <!-- INICIO DEL HEADER -->
+
+            <nav class="home__header-nav"> <!-- INICIO DEL MENU DE NAVEGACIÓN -->
+                <div>
+                    <i>icono del menu</i>
+                    <i>icono de busqueda</i>
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Reach</a></li>
+                </ul>
+            </nav>
+
+        </header> <!-- FIN DEL HEADER -->
+
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <footer></footer> <!-- INICIO DEL PIE DE PÁGINA -->
+    </main>
+
+</body>
+</html>
