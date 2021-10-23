@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta para caracteres especiales -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Meta del responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta de descripción de la empresa -->
+    <meta name="description" content="DATOS DE LA EMPRESA">
+    <!-- Meta del autor -->
+    <meta name="author" content="Christian">
+    <!-- Meta del eslogan de la empresa -->
+    <meta property="og:title" content="">
+
+    <!-- Titulo de la empresa -->
+    <title>Christian Puyen</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="icons/css/all.min.css">
+
+</head>
+<body>
+
+    <main class="home">
+
+        <header class="home__header"> <!-- INICIO DEL HEADER -->
+
+            <nav class="home__header-nav"> <!-- INICIO DEL MENU DE NAVEGACIÓN -->
+                <div>
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Reach</a></li>
+                </ul>
+            </nav> <!-- FIN DEL MENU DE NAVEGACIÓN -->
+
+            <div class="home__header-banner"> <!-- INICIO DEL BANNER -->
+                <div class="home__header-banner-video">
+                    <video src="img/background-video.mp4" autoplay loop muted controls></video>
+                    <div class="banner__video-down">
+                        <div>
+                            <p>01</p>
+                            <span></span>
+                            <span></span>
+                            <p>02</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-chevron-left"></i>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__header-banner-info"></div>
+            </div> <!-- FIN DEL BANNER -->
+
+        </header> <!-- FIN DEL HEADER -->
+
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <section></section> <!-- INICIO DE LA SECCIÓN -->
+
+        <footer></footer> <!-- INICIO DEL PIE DE PÁGINA -->
+    </main>
+
+</body>
+</html>
