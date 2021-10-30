@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta para caracteres especiales -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Meta del responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta de descripción de la empresa -->
+    <meta name="description" content="DATOS DE LA EMPRESA">
+    <!-- Meta del autor -->
+    <meta name="author" content="Christian">
+    <!-- Meta del eslogan de la empresa -->
+    <meta property="og:title" content="">
+
+    <!-- Titulo de la empresa -->
+    <title>Christian Puyen</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="icons/css/all.min.css">
+
+</head>
+<body>
+
+    <main class="home">
+
+        <header class="home__header"> <!-- INICIO DEL HEADER -->
+
+            <nav class="home__header-nav"> <!-- INICIO DEL MENU DE NAVEGACIÓN -->
+                <div>
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Reach</a></li>
+                </ul>
+            </nav> <!-- FIN DEL MENU DE NAVEGACIÓN -->
+
+            <div class="home__header-banner"> <!-- INICIO DEL BANNER -->
+                <div class="home__header-banner-video"> <!-- INICIO DEL VIDEO -->
+                    <video src="img/background-video.mp4" autoplay loop muted controls></video>
+                    <div class="banner__video-down">
+                        <div class="banner__video-down-left">
+                            <p>01</p>
+                            <span></span>
+                            <span></span>
+                            <p>02</p>
+                        </div>
+                        <div class="banner__video-down-right">
+                            <i class="fa fa-caret-left"></i>
+                            <i class="fa fa-caret-right"></i>
+                        </div>
+                    </div>
+                </div> <!-- FIN DEL VIDEO -->
+                <div class="home__header-banner-info"> <!-- INICIO DE LA INFORMACIÓN -->
+                    <span>Fashion</span>
+                    <h1>Christian Puyen</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime enim eum beatae dignissimos voluptate et?</p>
+                    <a href="">Read More<i class="fa fa-caret-right"></i></a>
+                    <form>
+                        <p>Suscribe to our Newsletter</p>
+                        <div>
+                            <input type="email" placeholder="Enter your email here">
+                            <button type="submit">Suscribe</button>
+                        </div>
+                    </form>
+                </div> <!-- FIN DE LA INFORMACIÓN -->
+            </div> <!-- FIN DEL BANNER -->
+
+        </header> <!-- FIN DEL HEADER -->
+
+        <section class="home__section01"> <!-- INICIO DE LA SECCIÓN 01 -->
+            <div class="home__section01-wrap">
+                <div class="section01__wrap-header">
+                    <span>01</span>
+                    <i class="fa fa-chart-line"></i>
+                    <h1>SEO FRIENDLY</h1>
+                </div>
+                <div class="section01__wrap-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, corrupti?</p>
+                    <button type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="home__section01-wrap">
+                <div class="section01__wrap-header">
+                    <span>02</span>
+                    <i class="fa fa-laptop"></i>
+                    <h1>RESPONSIVE TEMPLATE</h1>
+                </div>
+                <div class="section01__wrap-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, corrupti?</p>
+                    <button type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="home__section01-wrap">
+                <div class="section01__wrap-header">
+                    <span>03</span>
+                    <i class="fa fa-cogs"></i>
+                    <h1>EASE TO CUSTOMIZE</h1>
+                </div>
+                <div class="section01__wrap-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, corrupti?</p>
+                    <button type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section> <!-- FIN DE LA SECCIÓN 01 -->
+
+
+        <section class="home__section02"> <!-- INICIO DE LA SECCIÓN 02 -->
+            <div class="home__section02-wrap">
+                <p><b>Optimas</b> is a responsive multipurpose HTML template</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam voluptates consequuntur aperiam enim placeat?</p>
+            </div>
+            <button class="home__section02-btn" type="button">BUY NOW</button>
+        </section> <!-- FIN DE LA SECCIÓN 02 -->
+
+
+        <section class="home__section03"> <!-- INICIO DE LA SECCIÓN 03 -->
+            <div class="home__section03-header">
+                <p><b>LATEST</b> WORK</p>
+                <i class="fa fa-chevron-left"></i>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="home__section03-body">
+
+                <div class="section03__body-wrap"> <!-- CAJA 01 -->
+                    <div class="section03__body-wrap-up">
+                        <img src="img/base-datos.jpg" alt="Image01">
+                        <p><b>Data</b> Base</p>
+                    </div>
+                    <div class="section03__body-wrap-down">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid est dignissimos!</p>
+                    </div>
+                </div>
+
+                <div class="section03__body-wrap"> <!-- CAJA 02 -->
+                    <div class="section03__body-wrap-up">
+                        <img src="img/desarrollo-web.jpg" alt="Image02">
+                        <p><b>Web</b> Develop</p>
+                    </div>
+                    <div class="section03__body-wrap-down">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid est dignissimos!</p>
+                    </div>
+                </div>
+
+                <div class="section03__body-wrap"> <!-- CAJA 03 -->
+                    <div class="section03__body-wrap-up">
+                        <img src="img/diseño-responsivo.jpg" alt="Image03">
+                        <p><b>Responsive</b> Design</p>
+                    </div>
+                    <div class="section03__body-wrap-down">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid est dignissimos!</p>
+                    </div>
+                </div>
+
+                <div class="section03__body-wrap"> <!-- CAJA 04 -->
+                    <div class="section03__body-wrap-up">
+                        <img src="img/seo-web.jpg" alt="Image04">
+                        <p><b>Web</b> Seo</p>
+                    </div>
+                    <div class="section03__body-wrap-down">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid est dignissimos!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section> <!-- FIN DE LA SECCIÓN 03 -->
+
+
+        <footer></footer> <!-- INICIO DEL PIE DE PÁGINA -->
+    </main>
+
+</body>
+</html>
