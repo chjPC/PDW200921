@@ -1,0 +1,64 @@
+/*
+    ¿QUÉ ES UN SELECTOR?
+    SE UTILIZAN PARA ASIGNAR ESTILOS CSS.
+*/
+
+/*:::::::::::::::::::: TIPOS DE SELECTORES ::::::::::::::::::::*/
+
+/*
+    1. SELECTOR DE ETIQUETA:
+    ES EL MISMO NOMBRE DE LA ETIQUETA HTML
+        - p
+        - div
+        - span
+*/
+
+/*
+    2. SELECTOR DE CLASE:
+    SELECCIONA UNA CLASE CREADA EN HTML.
+        - .nombre-de-la-clase
+        - .home
+*/
+
+/*
+    3. SELECTOR DE IDENTIFICACIÓN:
+    SELECCIONA UNA IDENTIDAD CREADA EN HTML.
+        - #nombre-de-la-identidad
+        - #identidad1
+*/
+
+/*
+    4. SELECTOR DE ATRIBUTO:
+    SELECCIONA UNA ETIQUETA Y SU ATRIBUTO CREADA EN HTML.
+        - p[nombre-atributo]
+        - header[class="home__header"]
+*/
+
+/*:::::::::::::::::::: PROPIEDADES CSS ::::::::::::::::::::*/
+/*
+    1. background-color -> PROPIEDAD PARA FONDO SOLIDO
+    2. background -> PROPIEDAD PARA FONDO SOLIDO Y DEGRADADOS
+        - background: red; -> Pintado del fondo con texto (nombre del color en ingles).
+        - background: rgb(0, 100, 109); -> Pintado del fondo con colores primarios.
+        - background: #14ad3b; -> Pintado del fondo con HEXADECIMAL.
+        - background: rgba(233, 166, 78, 0.2); -> Transparencias.
+        - background: linear-gradient(red,blue); -> Degradado Linear.
+        - background: radial-gradient(red,blue); -> Degradado Radial.
+*/
+
+/*:::::::::::::::::::: CONOCIENDO LAS PROPIEDADES CSS ::::::::::::::::::::*/
+body{
+    background: lightsalmon;
+}
+body{
+    background: rgb(233, 166, 78);
+}
+body{
+    background: #14ad3b;
+}
+body{
+    background: rgba(233, 166, 78, 0.2);
+}
+body{
+    background: linear-gradient(red,blue);
+}
