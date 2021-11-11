@@ -1,0 +1,112 @@
+/*
+    ¿QUÉ ES UN SELECTOR?
+    SE UTILIZAN PARA ASIGNAR ESTILOS CSS.
+*/
+
+/*:::::::::::::::::::: TIPOS DE SELECTORES ::::::::::::::::::::*/
+
+/*
+    1. SELECTOR DE ETIQUETA:
+    ES EL MISMO NOMBRE DE LA ETIQUETA HTML
+        - p
+        - div
+        - span
+*/
+
+/*
+    2. SELECTOR DE CLASE:
+    SELECCIONA UNA CLASE CREADA EN HTML.
+        - .nombre-de-la-clase
+        - .home
+*/
+
+/*
+    3. SELECTOR DE IDENTIFICACIÓN:
+    SELECCIONA UNA IDENTIDAD CREADA EN HTML.
+        - #nombre-de-la-identidad
+        - #identidad1
+*/
+
+/*
+    4. SELECTOR DE ATRIBUTO:
+    SELECCIONA UNA ETIQUETA Y SU ATRIBUTO CREADA EN HTML.
+        - p[nombre-atributo]
+        - header[class="home__header"]
+*/
+
+/*:::::::::::::::::::: PROPIEDADES CSS ::::::::::::::::::::*/
+/*
+    1. background-color -> PROPIEDAD PARA FONDO SOLIDO
+    2. background -> PROPIEDAD PARA FONDO SOLIDO Y DEGRADADOS
+        - background: red; -> Pintado del fondo con texto (nombre del color en ingles).
+        - background: rgb(0, 100, 109); -> Pintado del fondo con colores primarios.
+        - background: #14ad3b; -> Pintado del fondo con HEXADECIMAL.
+        - background: rgba(233, 166, 78, 0.2); -> Transparencias.
+        - background: linear-gradient(red,blue); -> Degradado Linear.
+        - background: radial-gradient(red,blue); -> Degradado Radial.
+*/
+
+/*
+    3. font-family -> SELECCIONAR EL TIPO DE FUENTE DEL TEXTO.
+        - font-family: fantasy; -> fuente por defecto del editor.
+        - font-family: monospace; -> fuente por defecto del editor.
+        - font-family: sans-serif; -> fuente por defecto del editor.
+        - font-family: serif; -> fuente por defecto del editor.
+        - font-family: Arial; -> fuente por defecto en el computador.
+        - font-family: Helvetica; -> fuente por defecto en el computador.
+
+    4. font-size -> MEDIDA DEL TEXTO.
+        - font-size: 10px;
+
+    5. text-align -> ALINEAMIENTO DEL TEXTO.
+        - text-align: center; -> centrar el texto.
+        - text-align: left; -> texto hacia la izquierda.
+        - text-align: right; -> texto hacia la derecha.
+        - text-align: justify; -> texto justificado.
+
+    6. font-weight -> TEXTO EN NEGRITA.
+        - font-weight: 100 - 900; -> negrita en números.
+        - font-weight: bold; -> negrita en texto.
+        - font-weight: bolder; -> negrita en texto.
+        - font-weight: lighter; -> negrita en texto.
+        - font-weight: normal; -> texto sin negrita.
+
+    7. text-decoration -> DECORACIÓN DEL TEXTO.
+        - text-decoration: underline; -> línea hacia abajo.
+        - text-decoration: overline; -> línea hacia arriba.
+        - text-decoration: line-through; -> línea tachando.
+*/
+
+/*:::::::::::::::::::: MEDIDAS CSS ::::::::::::::::::::*/
+/*
+    Grados(90°) -> 90deg (degrees).
+    Pixeles -> 10px.
+*/
+
+/*:::::::::::::::::::: CONOCIENDO LAS PROPIEDADES CSS ::::::::::::::::::::*/
+body{
+    background: lightsalmon;
+}
+body{
+    background: rgb(233, 166, 78);
+}
+body{
+    background: #14ad3b;
+}
+body{
+    background: rgba(233, 166, 78, 0.2);
+}
+body{
+    background: linear-gradient(90deg,red,#fff,red);
+}
+body{
+    background: rgb(255, 242, 237);
+}
+
+.parrafo{
+    font-family: Arial;
+    font-size: 28px;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: line-through;
+}
