@@ -1,0 +1,469 @@
+/*
+    ¿QUÉ ES UN SELECTOR?
+    SE UTILIZAN PARA ASIGNAR ESTILOS CSS.
+*/
+
+/*:::::::::::::::::::: TIPOS DE SELECTORES ::::::::::::::::::::*/
+
+/*
+    1. SELECTOR DE ETIQUETA:
+    ES EL MISMO NOMBRE DE LA ETIQUETA HTML
+        - p
+        - div
+        - span
+*/
+
+/*
+    2. SELECTOR DE CLASE:
+    SELECCIONA UNA CLASE CREADA EN HTML.
+        - .nombre-de-la-clase
+        - .home
+*/
+
+/*
+    3. SELECTOR DE IDENTIFICACIÓN:
+    SELECCIONA UNA IDENTIDAD CREADA EN HTML.
+        - #nombre-de-la-identidad
+        - #identidad1
+*/
+
+/*
+    4. SELECTOR DE ATRIBUTO:
+    SELECCIONA UNA ETIQUETA Y SU ATRIBUTO CREADA EN HTML.
+        - p[nombre-atributo]
+        - header[class="home__header"]
+*/
+
+/*:::::::::::::::::::: PROPIEDADES CSS ::::::::::::::::::::*/
+/*
+    1. background-color -> PROPIEDAD PARA FONDO SOLIDO
+    2. background -> PROPIEDAD PARA FONDO SOLIDO Y DEGRADADOS
+        - background: red; -> Pintado del fondo con texto (nombre del color en ingles).
+        - background: rgb(0, 100, 109); -> Pintado del fondo con colores primarios.
+        - background: #14ad3b; -> Pintado del fondo con HEXADECIMAL.
+        - background: rgba(233, 166, 78, 0.2); -> Transparencias.
+        - background: linear-gradient(red,blue); -> Degradado Linear.
+        - background: radial-gradient(red,blue); -> Degradado Radial.
+*/
+
+/*
+    3. font-family -> SELECCIONAR EL TIPO DE FUENTE DEL TEXTO.
+        - font-family: fantasy; -> fuente por defecto del editor.
+        - font-family: monospace; -> fuente por defecto del editor.
+        - font-family: sans-serif; -> fuente por defecto del editor.
+        - font-family: serif; -> fuente por defecto del editor.
+        - font-family: Arial; -> fuente por defecto en el computador.
+        - font-family: Helvetica; -> fuente por defecto en el computador.
+
+    4. font-size -> MEDIDA DEL TEXTO.
+        - font-size: 10px;
+
+    5. text-align -> ALINEAMIENTO DEL TEXTO.
+        - text-align: center; -> centrar el texto.
+        - text-align: left; -> texto hacia la izquierda.
+        - text-align: right; -> texto hacia la derecha.
+        - text-align: justify; -> texto justificado.
+
+    6. font-weight -> TEXTO EN NEGRITA.
+        - font-weight: 100 - 900; -> negrita en números.
+        - font-weight: bold; -> negrita en texto.
+        - font-weight: bolder; -> negrita en texto.
+        - font-weight: lighter; -> negrita en texto.
+        - font-weight: normal; -> texto sin negrita.
+
+    7. text-decoration -> DECORACIÓN DEL TEXTO.
+        - text-decoration: underline; -> línea hacia abajo.
+        - text-decoration: overline; -> línea hacia arriba.
+        - text-decoration: line-through; -> línea tachando.
+
+    8. letter-spacing -> SEPARACIÓN ENTRE CARACTERES.
+        - letter-spacing: normal; -> espaciado por defecto.
+        - letter-spacing: 4px; -> espaciado a través de una longitud.
+
+    9. word-spacing -> SEPARACIÓN ENTRE PALABRAS.
+        - word-spacing: normal; -> espaciado por defecto.
+        - word-spacing: 4px; -> espaciado a través de una longitud.
+
+    10. line-height -> ESPACIADO ENTRE LINEAS.
+        - line-height: normal; -> espaciado por defecto.
+        - line-height: 4px; -> espaciado a través de una longitud.
+
+    11. text-transform -> TRANSFORMACIÓN DEL TEXTO.
+        - text-transform: lowercase; -> de mayúscula a minúscula.
+        - text-transform: uppercase; -> de minúscula a mayúscula.
+
+    12. color -> AGREGA UN COLOR AL TEXTO.
+        - color: red;
+        - color: rgb(156, 119, 70);
+        - color: #14ad3b;
+*/
+
+/*
+    13. width -> MEDIDA DEL ANCHO DE LONGITUD.
+        - width: auto; -> se acopla al contenido interno.
+        - width: 300px; -> ancho en pixeles.
+        - width: 100%; -> ancho en porcentaje.
+        - width: 100vw; -> ancho en medida del viewport.
+
+    14. height -> MEDIDA DEL ALTO DE LONGITUD.
+        - height: auto; -> se acopla al contenido interno.
+        - height: 300px; -> alto en pixeles.
+        - height: 100%; -> alto en porcentaje.
+        - height: 100vh; -> alto en medida del viewport.
+    
+    15. left -> IZQUIERDA.
+    16. right -> DERECHA.
+    17. top -> ARRIBA.
+    18. bottom -> ABAJO.
+*/
+
+/*
+    19. border -> CUATRO BORDES SIMULTÁNEOS.
+        - border: 5px solid #000;
+               -> 1px -> Grosor del borde.
+               -> solid -> Tipo de borde.
+               -> #000 -> Color del borde.
+        TIPO DE BORDES:
+        * solid -> sólido.
+        * dotted -> líneas punteada.
+        * double -> 2 líneas sólidas.
+        * dashed -> líneas punteada rectangular.
+    
+    20. border-top -> BORDE ARRIBA.
+        - border-top: 5px solid #000;
+    21. border-right -> BORDE A LA DERECHA.
+        - border-right: 5px solid #000;
+    22. border-left -> BORDE A LA IZQUIERDA.
+        - border-left: 5px solid #000;
+    23. border-bottom -> BORDE ABAJO.
+        - border-bottom: 5px solid #000;
+
+    24. border-radius -> BORDES REDONDEADOS.
+        - border-radius: 2px;
+        - border-radius: 5%;
+        POSICIONES DEL BORDE REDONDEADO:
+        * border-top-left-radius -> Borde redondeado arriba/izquierda.
+        * border-top-right-radius -> Borde redondeado arriba/derecha.
+        * border-bottom-left-radius -> Borde redondeado abajo/izquierda.
+        * border-bottom-right-radius -> Borde redondeado abajo/derecha.
+        FORMAR UN CÍRCULO:
+        * border-radius: 100%;
+*/
+
+/*
+    25. margin -> MARGENES EXTERNOS.
+        - margin: 12px; -> Margenes externos a los 4 lados.
+        - margin: 10%;
+        - margin: 12px 5px; -> 12px arriba y abajo / 5px izquierda y derecha.
+        - margin: 12px 10px 5px 6px; -> 12px arriba / 10px derecha / 5px abajo / 6px izquierda
+    
+    26. margin-top -> MARGEN EXTERNO HACIA ARRIBA.
+        - margin-top: 12px;
+    27. margin-bottom -> MARGEN EXTERNO HACIA ABAJO.
+        - margin-bottom: 12px;
+    28. margin-right -> MARGEN EXTERNO HACIA LA DERECHA.
+        - margin-right: 12px;
+    29. margin-left -> MARGEN EXTERNO HACIA LA IZQUIERDA.
+        - margin-left: 12px;
+
+    30. padding -> MARGENES INTERNOS.
+        - padding: 12px; -> Margenes internos a los 4 lados.
+        - padding: 10%;
+        - padding: 12px 5px; -> 12px arriba y abajo / 5px izquierda y derecha.
+        - padding: 12px 10px 5px 6px; -> 12px arriba / 10px derecha / 5px abajo / 6px izquierda
+
+    31. padding-top -> MARGEN INTERNO HACIA ARRIBA.
+        - padding-top: 12px;
+    32. padding-bottom -> MARGEN INTERNO HACIA ABAJO.
+        - padding-bottom: 12px;
+    33. padding-right -> MARGEN INTERNO HACIA LA DERECHA.
+        - padding-right: 12px;
+    34. padding-left -> MARGEN INTERNO HACIA LA IZQUIERDA.
+        - padding-left: 12px;
+*/
+
+/*
+    35. position -> POSICIONAMIENTO DE LA CAJAS.
+        - position: relative; -> Convierte una caja en padre.
+        - position: absolute; -> Convierte una caja libre.
+        - position: fixed; -> Convierte una caja en padre y libre.
+
+    36. z-index -> COLA DE LAS CAJAS
+        - z-index: 1;
+*/
+
+/*
+    37. opacity -> OPACIDAD DEL ELEMENTO.
+        - opacity: 0; -> Totalmente oculto.
+        - opacity: 1; -> Totalmente visible.
+
+    38. visibility -> VISIBILIDAD DEL ELEMENTO.
+        - visibility: hidden; -> Totalmente invisible y no se puede usar.
+        - visibility: visible; -> Totalmente visible.
+
+    39. transform -> TRANSFORMACIÓN DE ELEMENTOS.
+        - transform: scale(0); -> Elemento totalmente pequeño.
+        - transform: scale(1); -> Elemento de tamaño normal.
+        - transform: translateX(100px); -> Translada el elemento izquierda/derecha.
+        - transform: translateX(-100px); -> Translada el elemento derecha/izquierda.
+        - transform: translateY(100px); -> Translada el elemento arriba/abajo.
+        - transform: translateY(-100px); -> Translada el elemento abajo/arriba.
+        - transform: rotate(45deg); -> Rota de izquierda/derecha.
+        - transform: rotate(-45deg); -> Rota de derecha/izquierda.
+        - transform: skewX(45deg); -> Jala el elemento de izquierda/derecha.
+        - transform: skewX(-45deg); -> Jala el elemento de derecha/izquierda.
+        - transform: skewY(45deg); -> Jala el elemento de arriba/abajo.
+        - transform: skewY(-45deg); -> Jala el elemento de abajo/arriba.
+*/
+
+/*
+    40. display -> Se encarga del comportamiento de las cajas.
+        - display: none; -> Oculta y niega el uso del elemento.
+        - display: block; -> Muestra el elemento en su estado normal.
+        - display: flex; -> Flexibiliza las cajas hijos.
+
+    41. flex-direction -> Se encarga de direccionar las cajas o elementos hijos.
+        - flex-direction: row; -> Fila.
+        - flex-direction: row-reverse; -> Fila invertida.
+        - flex-direction: column; -> Columna.
+        - flex-direction: column-reverse; -> Columna invertida.
+
+    42. justify-content -> izquierda/centro/derecha de los elementos.
+        - justify-content: flex-end; -> Coloca el elemento a la izquierda.
+        - justify-content: flex-start; -> Coloca el elemento a la derecha.
+        - justify-content: center; -> Coloca el elemento en el centro.
+        - justify-content: space-between; -> Coloca los elementos equitativamente.
+        
+    43. align-items -> arriba/centro/abajo de los elementos.
+        - align-items: flex-end; -> Coloca el elemento arriba.
+        - align-items: flex-start; -> Coloca el elemento abajo.
+        - align-items: center; -> Coloca el elemento en el centro.
+*/
+
+/*:::::::::::::::::::: MEDIDAS CSS ::::::::::::::::::::*/
+/*
+    Grados(90°) -> 90deg (degrees).
+    Pixeles -> 10px.
+    Porcentajes -> 100%.
+    Viewport -> 100vw o 100vh.
+*/
+
+/*:::::::::::::::::::: CONOCIENDO LAS PROPIEDADES CSS ::::::::::::::::::::*/
+body{
+    background: lightsalmon;
+}
+body{
+    background: rgb(233, 166, 78);
+}
+body{
+    background: #14ad3b;
+}
+body{
+    background: rgba(233, 166, 78, 0.2);
+}
+body{
+    background: linear-gradient(90deg,red,#fff,red);
+}
+body{
+    background: rgb(255, 242, 237);
+}
+
+.parrafo{
+    font-family: Arial;
+    font-size: 28px;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+#parrafo__two{
+    letter-spacing: 4px;
+    word-spacing: 8px;
+}
+
+p[name="parrafo__three"]{
+    line-height: 32px;
+    text-transform: uppercase;
+    color: red;
+    color: rgb(156, 119, 70);
+    color: #14ad3b;
+}
+
+.caja__content{
+    width: 300px;
+    height: 300px;
+    background: darkred;
+    border-radius: 100%;
+}
+
+.caja__borde{
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.caja__margenes{
+    width: 300px;
+    height: 300px;
+    background: darkgreen;
+    margin: 10%;
+    margin: 20px;
+    margin: 30px 10%;
+    margin: 0;
+    margin: 5px 10% 10px 120px;
+    text-align: justify;
+    padding: 10px;
+    padding: 5px 20px;
+    padding: 0;
+    padding: 7px 30px 10px 5px;
+}
+
+/* PRE PRACTICA */
+.caja__wrapper{
+    width: 500px;
+    height: 320px;
+    background: url("img/desarrollo-web.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.caja__wrapper div{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.caja__wrapper div p{
+    font-size: 28px;
+    font-family: 'Arial';
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+}
+
+/* POSICIONAMIENTO */
+.padre{
+    width: 100%;height: 400px;
+    margin-top: 20px;
+    background: darkorange;
+
+    position: relative;
+}
+.hijo{
+    width: 200px;
+    height: 100px;
+    background: darkgreen;
+
+    position: absolute;
+    top: 15px;right: 20px;
+}
+.padreHijo{
+    width: 40px;
+    height: 40px;
+    background: darkgreen;
+    border-radius: 100%;
+
+    position: fixed;
+    right: 5px;top: 25px;
+}
+
+/* Z INDEX */
+.zindex{
+    width: 200px;
+    height: 300px;
+    background: darkblue;
+    position: relative;
+    margin-top: 30px;
+}
+.zindex1{
+    width: 50%;
+    height: 50%;
+    background: darkcyan;
+    position: absolute;
+    top: 5%;left: 5%;
+    z-index: 2;
+}
+.zindex2{
+    width: 50%;
+    height: 50%;
+    background: darkkhaki;
+    position: absolute;
+    bottom: 5%;right: 5%;
+}
+
+/* OPACITY \ VISIBILITY */
+.opacity__caja{
+    width: 200px;height: 300px;
+    margin-top: 25px;
+    background: darkgoldenrod;
+    
+    opacity: 1;
+    visibility: hidden;
+    visibility: visible;
+}
+
+/* TRANSFORM */
+.transform__caja{
+    width: 200px;height: 200px;
+    margin-top: 15px;margin-left: 50%;
+    background: linear-gradient(90deg, blue,red,green);
+
+    transform: scale(1.25);
+    transform: translate(100px, -100px);
+    transform: rotate(180deg);
+    transform: skewY(0);
+}
+
+/* CASO PRACTICO \ POSITION, Z-INDEX, TRANSFORM */
+.barra__practica{
+    width: 100%;height: 50px;
+    background: #e4cccc;
+    position: relative; /* Convertimos la barra en padre */
+}
+.barra__practica nav{
+    width: auto;height: 100%;
+    position: absolute; /* Convertimos el menu en hijo */
+    right: 0;top: 0;
+}
+.barra__practica nav ul{
+    width: auto;height: 100%;
+    position: relative;
+    display: flex;
+}
+.barra__practica nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.barra__practica nav ul li a{
+    text-decoration: none;
+    font-family: 'Arial';font-size: 14px;
+    color: black;
+}
+
+/* DISPLAY */
+.display__caja{
+    display: none;
+}
+.display__caja{
+    display: block;
+}
+.display__caja{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background: black;
+}
+.display__caja nav ul{
+    height: 270px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+}
+.display__caja nav ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.display__caja nav ul li a{color: #fff;}
