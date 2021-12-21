@@ -1,0 +1,816 @@
+/*
+    ¿QUÉ ES UN SELECTOR?
+    SE UTILIZAN PARA ASIGNAR ESTILOS CSS.
+*/
+
+/*:::::::::::::::::::: TIPOS DE SELECTORES ::::::::::::::::::::*/
+
+/*
+    1. SELECTOR DE ETIQUETA:
+    ES EL MISMO NOMBRE DE LA ETIQUETA HTML
+        - p
+        - div
+        - span
+*/
+
+/*
+    2. SELECTOR DE CLASE:
+    SELECCIONA UNA CLASE CREADA EN HTML.
+        - .nombre-de-la-clase
+        - .home
+*/
+
+/*
+    3. SELECTOR DE IDENTIFICACIÓN:
+    SELECCIONA UNA IDENTIDAD CREADA EN HTML.
+        - #nombre-de-la-identidad
+        - #identidad1
+*/
+
+/*
+    4. SELECTOR DE ATRIBUTO:
+    SELECCIONA UNA ETIQUETA Y SU ATRIBUTO CREADA EN HTML.
+        - p[nombre-atributo]
+        - header[class="home__header"]
+*/
+
+/*
+    5. SELECTOR UNIVERSAL:
+    SELECCIONA TODA LA DOCUMENTACION EN HTML.
+        - *
+*/
+
+/*:::::::::::::::::::: PROPIEDADES CSS ::::::::::::::::::::*/
+/*
+    1. background-color -> PROPIEDAD PARA FONDO SOLIDO
+    2. background -> PROPIEDAD PARA FONDO SOLIDO Y DEGRADADOS
+        - background: red; -> Pintado del fondo con texto (nombre del color en ingles).
+        - background: rgb(0, 100, 109); -> Pintado del fondo con colores primarios.
+        - background: #14ad3b; -> Pintado del fondo con HEXADECIMAL.
+        - background: rgba(233, 166, 78, 0.2); -> Transparencias.
+        - background: linear-gradient(red,blue); -> Degradado Linear.
+        - background: radial-gradient(red,blue); -> Degradado Radial.
+*/
+
+/*
+    3. font-family -> SELECCIONAR EL TIPO DE FUENTE DEL TEXTO.
+        - font-family: fantasy; -> fuente por defecto del editor.
+        - font-family: monospace; -> fuente por defecto del editor.
+        - font-family: sans-serif; -> fuente por defecto del editor.
+        - font-family: serif; -> fuente por defecto del editor.
+        - font-family: Arial; -> fuente por defecto en el computador.
+        - font-family: Helvetica; -> fuente por defecto en el computador.
+
+    4. font-size -> MEDIDA DEL TEXTO.
+        - font-size: 10px;
+
+    5. text-align -> ALINEAMIENTO DEL TEXTO.
+        - text-align: center; -> centrar el texto.
+        - text-align: left; -> texto hacia la izquierda.
+        - text-align: right; -> texto hacia la derecha.
+        - text-align: justify; -> texto justificado.
+
+    6. font-weight -> TEXTO EN NEGRITA.
+        - font-weight: 100 - 900; -> negrita en números.
+        - font-weight: bold; -> negrita en texto.
+        - font-weight: bolder; -> negrita en texto.
+        - font-weight: lighter; -> negrita en texto.
+        - font-weight: normal; -> texto sin negrita.
+
+    7. text-decoration -> DECORACIÓN DEL TEXTO.
+        - text-decoration: underline; -> línea hacia abajo.
+        - text-decoration: overline; -> línea hacia arriba.
+        - text-decoration: line-through; -> línea tachando.
+
+    8. letter-spacing -> SEPARACIÓN ENTRE CARACTERES.
+        - letter-spacing: normal; -> espaciado por defecto.
+        - letter-spacing: 4px; -> espaciado a través de una longitud.
+
+    9. word-spacing -> SEPARACIÓN ENTRE PALABRAS.
+        - word-spacing: normal; -> espaciado por defecto.
+        - word-spacing: 4px; -> espaciado a través de una longitud.
+
+    10. line-height -> ESPACIADO ENTRE LINEAS.
+        - line-height: normal; -> espaciado por defecto.
+        - line-height: 4px; -> espaciado a través de una longitud.
+
+    11. text-transform -> TRANSFORMACIÓN DEL TEXTO.
+        - text-transform: lowercase; -> de mayúscula a minúscula.
+        - text-transform: uppercase; -> de minúscula a mayúscula.
+
+    12. color -> AGREGA UN COLOR AL TEXTO.
+        - color: red;
+        - color: rgb(156, 119, 70);
+        - color: #14ad3b;
+*/
+
+/*
+    13. width -> MEDIDA DEL ANCHO DE LONGITUD.
+        - width: auto; -> se acopla al contenido interno.
+        - width: 300px; -> ancho en pixeles.
+        - width: 100%; -> ancho en porcentaje.
+        - width: 100vw; -> ancho en medida del viewport.
+
+    14. height -> MEDIDA DEL ALTO DE LONGITUD.
+        - height: auto; -> se acopla al contenido interno.
+        - height: 300px; -> alto en pixeles.
+        - height: 100%; -> alto en porcentaje.
+        - height: 100vh; -> alto en medida del viewport.
+    
+    15. left -> IZQUIERDA.
+    16. right -> DERECHA.
+    17. top -> ARRIBA.
+    18. bottom -> ABAJO.
+*/
+
+/*
+    19. border -> CUATRO BORDES SIMULTÁNEOS.
+        - border: 5px solid #000;
+               -> 1px -> Grosor del borde.
+               -> solid -> Tipo de borde.
+               -> #000 -> Color del borde.
+        TIPO DE BORDES:
+        * solid -> sólido.
+        * dotted -> líneas punteada.
+        * double -> 2 líneas sólidas.
+        * dashed -> líneas punteada rectangular.
+    
+    20. border-top -> BORDE ARRIBA.
+        - border-top: 5px solid #000;
+    21. border-right -> BORDE A LA DERECHA.
+        - border-right: 5px solid #000;
+    22. border-left -> BORDE A LA IZQUIERDA.
+        - border-left: 5px solid #000;
+    23. border-bottom -> BORDE ABAJO.
+        - border-bottom: 5px solid #000;
+
+    24. border-radius -> BORDES REDONDEADOS.
+        - border-radius: 2px;
+        - border-radius: 5%;
+        POSICIONES DEL BORDE REDONDEADO:
+        * border-top-left-radius -> Borde redondeado arriba/izquierda.
+        * border-top-right-radius -> Borde redondeado arriba/derecha.
+        * border-bottom-left-radius -> Borde redondeado abajo/izquierda.
+        * border-bottom-right-radius -> Borde redondeado abajo/derecha.
+        FORMAR UN CÍRCULO:
+        * border-radius: 100%;
+*/
+
+/*
+    25. margin -> MARGENES EXTERNOS.
+        - margin: 12px; -> Margenes externos a los 4 lados.
+        - margin: 10%;
+        - margin: 12px 5px; -> 12px arriba y abajo / 5px izquierda y derecha.
+        - margin: 12px 10px 5px 6px; -> 12px arriba / 10px derecha / 5px abajo / 6px izquierda
+    
+    26. margin-top -> MARGEN EXTERNO HACIA ARRIBA.
+        - margin-top: 12px;
+    27. margin-bottom -> MARGEN EXTERNO HACIA ABAJO.
+        - margin-bottom: 12px;
+    28. margin-right -> MARGEN EXTERNO HACIA LA DERECHA.
+        - margin-right: 12px;
+    29. margin-left -> MARGEN EXTERNO HACIA LA IZQUIERDA.
+        - margin-left: 12px;
+
+    30. padding -> MARGENES INTERNOS.
+        - padding: 12px; -> Margenes internos a los 4 lados.
+        - padding: 10%;
+        - padding: 12px 5px; -> 12px arriba y abajo / 5px izquierda y derecha.
+        - padding: 12px 10px 5px 6px; -> 12px arriba / 10px derecha / 5px abajo / 6px izquierda
+
+    31. padding-top -> MARGEN INTERNO HACIA ARRIBA.
+        - padding-top: 12px;
+    32. padding-bottom -> MARGEN INTERNO HACIA ABAJO.
+        - padding-bottom: 12px;
+    33. padding-right -> MARGEN INTERNO HACIA LA DERECHA.
+        - padding-right: 12px;
+    34. padding-left -> MARGEN INTERNO HACIA LA IZQUIERDA.
+        - padding-left: 12px;
+*/
+
+/*
+    35. position -> POSICIONAMIENTO DE LA CAJAS.
+        - position: relative; -> Convierte una caja en padre.
+        - position: absolute; -> Convierte una caja libre.
+        - position: fixed; -> Convierte una caja en padre y libre.
+
+    36. z-index -> COLA DE LAS CAJAS
+        - z-index: 1;
+*/
+
+/*
+    37. opacity -> OPACIDAD DEL ELEMENTO.
+        - opacity: 0; -> Totalmente oculto.
+        - opacity: 1; -> Totalmente visible.
+
+    38. visibility -> VISIBILIDAD DEL ELEMENTO.
+        - visibility: hidden; -> Totalmente invisible y no se puede usar.
+        - visibility: visible; -> Totalmente visible.
+
+    39. transform -> TRANSFORMACIÓN DE ELEMENTOS.
+        - transform: scale(0); -> Elemento totalmente pequeño.
+        - transform: scale(1); -> Elemento de tamaño normal.
+        - transform: translateX(100px); -> Translada el elemento izquierda/derecha.
+        - transform: translateX(-100px); -> Translada el elemento derecha/izquierda.
+        - transform: translateY(100px); -> Translada el elemento arriba/abajo.
+        - transform: translateY(-100px); -> Translada el elemento abajo/arriba.
+        - transform: rotate(45deg); -> Rota de izquierda/derecha.
+        - transform: rotate(-45deg); -> Rota de derecha/izquierda.
+        - transform: skewX(45deg); -> Jala el elemento de izquierda/derecha.
+        - transform: skewX(-45deg); -> Jala el elemento de derecha/izquierda.
+        - transform: skewY(45deg); -> Jala el elemento de arriba/abajo.
+        - transform: skewY(-45deg); -> Jala el elemento de abajo/arriba.
+*/
+
+/*
+    40. display -> Se encarga del comportamiento de las cajas.
+        - display: none; -> Oculta y niega el uso del elemento.
+        - display: block; -> Muestra el elemento en su estado normal.
+        - display: flex; -> Flexibiliza las cajas hijos.
+
+    41. flex-direction -> Se encarga de direccionar las cajas o elementos hijos.
+        - flex-direction: row; -> Fila.
+        - flex-direction: row-reverse; -> Fila invertida.
+        - flex-direction: column; -> Columna.
+        - flex-direction: column-reverse; -> Columna invertida.
+
+    42. justify-content -> izquierda/centro/derecha de los elementos.
+        - justify-content: flex-end; -> Coloca el elemento a la izquierda.
+        - justify-content: flex-start; -> Coloca el elemento a la derecha.
+        - justify-content: center; -> Coloca el elemento en el centro.
+        - justify-content: space-between; -> Coloca los elementos equitativamente.
+        
+    43. align-items -> arriba/centro/abajo de los elementos.
+        - align-items: flex-end; -> Coloca el elemento arriba.
+        - align-items: flex-start; -> Coloca el elemento abajo.
+        - align-items: center; -> Coloca el elemento en el centro.
+*/
+
+/*
+    44. overflow -> Recorta, dibuja y crea barras de desplazamiento.
+        - overflow: visible; -> Por defecto del navegador.
+        - overflow: hidden; -> Recorta el contenido y no muestra barra de desplazamiento.
+        - overflow: auto; -> Detecta el contenido y crea barra de desplazamiento.
+        - overflow: scroll; -> Crea barras de desplazamiento derecha/abajo.
+
+    45. box-sizing -> Comportamiento de la cajas o contenidos.
+        - box-sizing: border-box; -> Acopla las cajas a los anchos establecidos.
+
+    46. box-shadow -> Crea sombras en las cajas.
+        - box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+        * 2px -> De arriba hacia abajo.
+        * 4px -> De derecha a izquierda.
+        * 8px -> Intensidad de la sombra.
+        * rgba(0, 0, 0, 0.3) -> Color de la sombra.
+
+    47. text-shadow -> Crea sombra en los textos.
+        - text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+        * 2px -> De arriba hacia abajo.
+        * 4px -> De derecha a izquierda.
+        * 8px -> Intensidad de la sombra.
+        * rgba(0, 0, 0, 0.3) -> Color de la sombra.
+*/
+
+/*:::::::::::::::::::: MEDIDAS CSS ::::::::::::::::::::*/
+/*
+    Grados(90°) -> 90deg (degrees).
+    Pixeles -> 10px.
+    Porcentajes -> 100%.
+    Viewport -> 100vw o 100vh.
+*/
+
+/*:::::::::::::::::::: CONOCIENDO LAS PROPIEDADES CSS ::::::::::::::::::::*/
+*/* SELECTOR UNIVERSAL */{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightsalmon;
+}
+body{
+    background: rgb(233, 166, 78);
+}
+body{
+    background: #14ad3b;
+}
+body{
+    background: rgba(233, 166, 78, 0.2);
+}
+body{
+    background: linear-gradient(90deg,red,#fff,red);
+}
+body{
+    background: rgb(255, 242, 237);
+}
+
+.parrafo{
+    font-family: Arial;
+    font-size: 28px;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+#parrafo__two{
+    letter-spacing: 4px;
+    word-spacing: 8px;
+}
+
+p[name="parrafo__three"]{
+    line-height: 32px;
+    text-transform: uppercase;
+    color: red;
+    color: rgb(156, 119, 70);
+    color: #14ad3b;
+}
+
+.caja__content{
+    width: 300px;
+    height: 300px;
+    background: darkred;
+    border-radius: 100%;
+}
+
+.caja__borde{
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.caja__margenes{
+    width: 300px;
+    height: 300px;
+    background: darkgreen;
+    margin: 10%;
+    margin: 20px;
+    margin: 30px 10%;
+    margin: 0;
+    margin: 5px 10% 10px 120px;
+    text-align: justify;
+    padding: 10px;
+    padding: 5px 20px;
+    padding: 0;
+    padding: 7px 30px 10px 5px;
+}
+
+/* PRE PRACTICA */
+.caja__wrapper{
+    width: 500px;
+    height: 320px;
+    background: url("img/desarrollo-web.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.caja__wrapper div{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.caja__wrapper div p{
+    font-size: 28px;
+    font-family: 'Arial';
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+}
+
+/* POSICIONAMIENTO */
+.padre{
+    width: 100%;height: 400px;
+    margin-top: 20px;
+    background: darkorange;
+
+    position: relative;
+}
+.hijo{
+    width: 200px;
+    height: 100px;
+    background: darkgreen;
+
+    position: absolute;
+    top: 15px;right: 20px;
+}
+.padreHijo{
+    width: 40px;
+    height: 40px;
+    background: darkgreen;
+    border-radius: 100%;
+
+    position: fixed;
+    right: 5px;top: 25px;
+}
+
+/* Z INDEX */
+.zindex{
+    width: 200px;
+    height: 300px;
+    background: darkblue;
+    position: relative;
+    margin-top: 30px;
+}
+.zindex1{
+    width: 50%;
+    height: 50%;
+    background: darkcyan;
+    position: absolute;
+    top: 5%;left: 5%;
+    z-index: 2;
+}
+.zindex2{
+    width: 50%;
+    height: 50%;
+    background: darkkhaki;
+    position: absolute;
+    bottom: 5%;right: 5%;
+}
+
+/* OPACITY \ VISIBILITY */
+.opacity__caja{
+    width: 200px;height: 300px;
+    margin-top: 25px;
+    background: darkgoldenrod;
+    
+    opacity: 1;
+    visibility: hidden;
+    visibility: visible;
+}
+
+/* TRANSFORM */
+.transform__caja{
+    width: 200px;height: 200px;
+    margin-top: 15px;margin-left: 50%;
+    background: linear-gradient(90deg, blue,red,green);
+
+    transform: scale(1.25);
+    transform: translate(100px, -100px);
+    transform: rotate(180deg);
+    transform: skewY(0);
+}
+
+/* CASO PRACTICO \ POSITION, Z-INDEX, TRANSFORM */
+.barra__practica{
+    width: 100%;height: 50px;
+    background: #e4cccc;
+    position: relative; /* Convertimos la barra en padre */
+}
+.barra__practica nav{
+    width: auto;height: 100%;
+    position: absolute; /* Convertimos el menu en hijo */
+    right: 0;top: 0;
+}
+.barra__practica nav ul{
+    width: auto;height: 100%;
+    position: relative;
+
+    display: flex; /* PENDIENTE */
+}
+.barra__practica nav ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.barra__practica nav ul li a{
+    text-decoration: none;
+    font-family: 'Arial';font-size: 14px;
+    color: black;
+}
+
+/* DISPLAY */
+.display__caja{
+    display: none;
+}
+.display__caja{
+    display: block;
+}
+.display__caja{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    background: black;
+}
+.display__caja nav ul{
+    height: 270px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+}
+.display__caja nav ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.display__caja nav ul li a{color: #fff;}
+
+/* CASO PRACTICO \ 02 */
+.menu{
+    width: 100%;
+    padding: 60px 2.5%;
+    background: #fff;
+
+    box-sizing: border-box;
+}
+.menu__content{
+    width: 100%;
+    display: flex;align-items: center;justify-content: center;
+    background: red;
+}
+.menu__content-list{display: flex;}
+.menu__content-list li{
+    list-style: none;
+    margin-right: 40px;
+}
+.menu__content-list li a{
+    text-decoration: none;
+    font-family: "Arial";font-size: 15px;font-weight: bold;
+    color: #000;
+}
+    /*imagen*/
+.menu__content-image{
+    width: 100px;height: 100px;
+    margin: 0 20px;
+    border-radius: 100%;
+    position: relative;
+    border: 2px solid #000;
+}
+.menu__content-image img{
+    position: absolute;
+    width: 100%;height: 100%;
+    border-radius: 100%;
+}
+    /*buttons*/
+.menu__content-buttons button{
+    padding: 12px 18px;
+    border: 2px solid #5f3524;
+    background: none;
+    border-radius: 20px;
+    font-family: "Arial";font-size: 15px;font-weight: bold;
+    color: #5f3524;
+    cursor: pointer;
+}
+
+/* OVERFLOW */
+.overflow{
+    width: 450px;height: 200px;
+    border: 2px solid #000;
+
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.overflow__content{
+    width: 100%;height: 100%;
+    position: relative;
+
+    overflow: auto;
+}
+.overflow__content p{
+    width: 125%;
+    font-size: 17px;font-family: "Arial";
+    color: red;text-align: justify;
+    margin: 0;padding: 0 5px;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/*
+    47. transition -> Realiza transiciones de larga o corta duración.
+        - transition: all .3s ease;
+            * all -> Seleciona las propiedades
+              background
+              color
+            * 1s / .1s -> Duración de la transición.
+            * ease -> Tipo de transición.
+              ease-in -> Transición al iniciar.
+              ease-out -> Transición al finalizar.
+              ease-in-out -> Transición al iniciar y al finalizar.
+    48. transition-property: all;
+    49. transition-duration: 1s / .1s;
+    50. transition-timing-function: ease;
+
+    51. animation -> Realiza animaciones.
+        - animation: banner 1s ease;
+            * banner -> Nombre de la animación.
+            * 1s -> Duración de la animación.
+            * ease -> Tipo de transición de la animación.
+              ease-in -> Transición al iniciar.
+              ease-out -> Transición al finalizar.
+              ease-in-out -> Transición al iniciar y al finalizar.
+        - animation-name: banner;
+        - animation-duration: 5s;
+        - animation-timing-function: ease;
+        - animation-iteration-count: infinite;
+        - animation-direction: alternate;
+            * alternate
+            * reverse
+            * alternate-reverse
+
+    PSEUDO-CLASES -> PALABRA CLAVE QUE SE LE AÑADE A LOS SELECTORES.
+
+        - selector:pseudo-clase{} -> Estructura o representación.
+
+    TIPOS DE PSEUDO-CLASES:
+
+    - :hover
+    - :first-child
+    - :last-child
+    - :nth-child()
+
+    PSEUDO-ELEMENTOS - > PALABRA CLAVE QUE SE LE AÑADE A LOS SELECTORES.
+
+        - selector::pseudo-elemento{} -> Estructura o representación.
+    
+    TIPOS DE PSEUDO-ELEMENTOS:
+
+    - ::first-letter -> Aplica cambios a la primera letra de cada parrafo.
+    - ::first-line -> Aplica cambios a la primera fila de cada parrafo.
+    - ::before -> Crea un elemento antes del contenido principal.
+    - ::after -> Crea un elemento después del contenido principal.
+*/
+
+.hover{
+    width: 250px;height: 250px;
+    margin: 5% 2.5%;
+    background: blue;
+
+    transition: all .7s ease;
+}
+.hover:hover{
+    background: black;
+    border-radius: 100%;
+}
+
+.parrafo__hover{
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 40px 10px;
+    background: yellowgreen;
+}
+.parrafo__hover p{
+    font-family: "Arial";font-size: 28px;
+    font-weight: bold;letter-spacing: 1px;
+    color: darkgreen;text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    transition: all .3s ease;
+}
+.parrafo__hover:hover p{
+    color: darkred;
+}
+
+.select__child{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;justify-content: center;align-items: center;
+}
+.select__child p{
+    font-family: "Arial";font-size: 18px;font-weight: bold;
+    margin-left: 20px;
+}
+.select__child p:first-child{color: red;}
+.select__child p:last-child{color: yellowgreen;}
+
+.select__child p:nth-child(2){color: blue;}
+.select__child p:nth-child(3){color: lightskyblue;}
+
+/* PSEUDO-ELEMENTOS */
+    /* ::first-letter */
+.content__text-element{
+    width: 100%;height: auto;
+    padding: 20px 50px;
+    background: black;
+}
+.content__text-element p{
+    font-family: monospace;font-size: 22px;letter-spacing: 1.3px;
+    color: #fafafa;margin-top: 20px;
+}
+.content__text-element p:first-child{margin-top: 0;}
+.content__text-element p::first-letter{
+    font-size: 32px;font-family: Tahoma;
+    font-weight: 900;color: orangered;
+}
+
+    /* ::first-line */
+.content__text-element-line{
+    width: 100%;height: auto;
+    padding: 20px 50px;
+    background: darkcyan;
+}
+.content__text-element-line p{
+    font-family: monospace;font-size: 18px;letter-spacing: 1.3px;
+    color: #fafafa;margin-top: 20px;
+}
+.content__text-element-line p:first-child{margin-top: 0;}
+.content__text-element-line p::first-line{
+    text-transform: uppercase;color: #000;font-weight: bold;
+}
+
+    /* before \ after */
+.content__text-element-beaf{
+    width: 100%;height: auto;
+    padding: 20px 50px;
+    background: darkolivegreen;
+}
+.content__text-element-beaf p{
+    font-family: monospace;font-size: 18px;letter-spacing: 1.3px;
+    color: #fafafa;
+}
+.content__text-element-beaf p::before{
+    content: "Texto agregado con before";
+    font-size: 14px;letter-spacing: 1px;
+    color: yellowgreen;margin-right: 12px;
+}
+.content__text-element-beaf p::after{
+    content: "Texto agregado con after";
+    font-size: 15px;
+    color: darkorange;margin-left: 12px;
+}
+
+.content__text-element-beaf-figure{
+    width: 300px;height: 150px;
+    background: tomato;
+    margin: 50px 120px;
+
+    position: relative;
+}
+.content__text-element-beaf-figure::before{
+    content: "";
+    width: 40%;height: 100%;
+    background: violet;
+
+    position: absolute;left: -20%;top: 0;
+}
+.content__text-element-beaf-figure::after{
+    content: "";
+    width: 40%;height: 100%;
+    background: darkred;
+
+    position: absolute;right: -20%;top: 0;
+}
+
+/* ANIMATION */
+.content__animation{
+    width: 80%;height: 300px;
+    margin: 0 10% 50px 10%;
+    display: flex;justify-content: center;align-items: center;
+    background: black;
+    overflow: hidden;
+}
+.content__animation p{
+    font-family: "Arial";font-size: 22px;
+    color: #14ad3b;opacity: 1;
+
+    animation: banner 1s ease infinite alternate;
+    animation-name: banner;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes banner{
+    0%{transform: translateX(0);opacity: 1;}
+    20%{transform: translateX(-1000px);opacity: 1;}
+    25%{transform: translateX(-1000px);opacity: 0;}
+    50%{transform: translateX(1000px);opacity: 0;}
+    75%{transform: translateX(1000px);opacity: 0;}
+    80%{transform: translateX(0);opacity: 1;}
+    100%{transform: translateX(0);opacity: 1;}
+}
+
+/* CASO PRACTICO \ 03 */
+.banner__content{
+    width: 100vw;height: 100vh;
+    overflow: hidden;
+}
+.banner__wrapper{
+    width: 100%;height: 100%;
+    position: relative;
+}
+
+.banner__wrapper-slider{
+    width: 100%;height: 100%;
+    position: absolute;top: 0;left: 0;
+    transition: all .3s ease;
+}
+.banner__wrapper-slider:first-child{transform: translateX(0);}
+.banner__wrapper:hover .banner__wrapper-slider:first-child{transform: translateX(-100%);}
+
+.banner__wrapper-slider:last-child{transform: translateX(100%);}
+.banner__wrapper:hover .banner__wrapper-slider:last-child{transform: translateX(0);}
+
+.banner__wrapper-slider div{
+    width: 100%;height: 100%;
+    position: relative;
+    display: flex;justify-content: center;align-items: center;
+}
+.banner__wrapper-slider div img{
+    width: 100%;height: 100%;
+    position: absolute;top: 0;left: 0;
+    z-index: 1;
+}
+.banner__wrapper-slider div a{
+    position: relative;
+    z-index: 2;
+    font-family: "Arial";font-size: 42px;
+    color: #fff;background: black;
+    padding: 20px 40px;
+}
