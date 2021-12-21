@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="parrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea, voluptate ratione blanditiis magnam eum velit soluta, doloremque et asperiores totam deleniti neque. Ad aut aliquam modi, esse error vero.
+    </p>
+    <p id="parrafo__two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dicta quo iste veritatis maiores perferendis?</p>
+    <p name="parrafo__three">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore, distinctio architecto debitis velit dolores illum nulla ab et, modi ea impedit omnis atque cum totam doloremque, qui hic officia.
+        Ea nihil provident sapiente quod. Eaque quas voluptatum cupiditate, enim ea fuga nemo unde debitis minima, aut vitae autem natus nobis tempora omnis vel eum nam possimus aspernatur id harum!
+        Vero officia dolor deserunt enim adipisci, a expedita fugit consequuntur inventore vitae nobis velit quasi. In quas molestias exercitationem minima obcaecati eum nostrum animi, doloremque quaerat aliquid perspiciatis rerum consectetur.
+    </p>
+    <div class="caja__content"></div>
+
+    <div class="caja__borde"></div>
+
+    <div class="caja__margenes">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum autem aut error harum illo minima! Quisquam sapiente optio autem esse magnam incidunt eveniet, explicabo quis?</p>
+    </div>
+
+    <div class="caja__wrapper">
+        <div>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+
+
+    <div class="padre"><!-- ETIQUETA PADRE -->
+        <div class="hijo"><!-- ETIQUETA HIJO --></div>
+        <div class="padreHijo"><!-- ETIQUETA HIJO -->w</div>
+    </div>
+
+    <div class="zindex">
+        <div class="zindex1"></div>
+        <div class="zindex2"></div>
+    </div>
+
+    <div class="opacity__caja">
+        <a href="#">Hola</a>
+    </div>
+
+    <div class="transform__caja"></div>
+
+    <!-- CASO PRACTICO \ POSITION, Z-INDEX, TRANSFORM -->
+    <div class="barra__practica">
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CONOCENOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="display__caja">
+        <nav>
+            <ul>
+                <li><a href="#">icono 01</a></li>
+                <li><a href="#">icono 02</a></li>
+                <li><a href="#">icono 03</a></li>
+                <li><a href="#">icono 04</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CONOCENOS</a></li>
+                <li><a href="#">EMPRESA</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CASO PRACTICO \ 02 -->
+    <section class="menu">
+        <nav class="menu__content">
+            <ul class="menu__content-list">
+                <li><a href="#">AMERICA</a></li>
+                <li><a href="#">EUROPA</a></li>
+                <li><a href="#">AFRICA</a></li>
+            </ul>
+            <div class="menu__content-image">
+                <img src="img/base-datos.jpg" alt="image 01">
+            </div>
+            <ul class="menu__content-list">
+                <li><a href="#">ASIA</a></li>
+                <li><a href="#">ESPAÑA</a></li>
+            </ul>
+            <div class="menu__content-buttons">
+                <button type="button">DESCUENTOS</button>
+                <button type="button">search</button>
+            </div>
+        </nav>
+    </section>
+
+    <!-- OVERFLOW -->
+    <section class="overflow">
+        <div class="overflow__content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet voluptate blanditiis placeat, odit sapiente, vel dolorem ea dignissimos dolores beatae odio? Saepe numquam in maxime animi error perspiciatis quasi.
+            Cumque doloremque esse minus deserunt quasi tempora reiciendis repudiandae ut, consequatur perspiciatis laboriosam debitis pariatur exercitationem ea dignissimos porro, temporibus voluptatum corrupti! Consectetur aperiam vitae porro recusandae corrupti dicta alias.
+            Nobis ab sunt nemo veniam assumenda cum dolor ex placeat perferendis, perspiciatis necessitatibus dolores, neque cupiditate hic consectetur harum unde magni quisquam temporibus sint! Quae fugiat rem magnam cumque voluptate.
+            Quasi placeat magni optio veritatis. Eius, beatae sapiente. Tempora harum et ullam at asperiores quia molestias debitis? Quaerat doloremque quo iusto rem in recusandae blanditiis nisi beatae? Rem, eos non.
+            Harum fugiat excepturi reprehenderit quidem asperiores, laboriosam sapiente est cupiditate ullam natus ex dicta consequatur dolore sed possimus quia consequuntur blanditiis ipsum? Perferendis, ipsa praesentium officiis sint corporis quidem reprehenderit.</p>
+        </div>
+    </section>
+
+    <!-- PSEUDO-CLASES -->
+        <!-- Hover \ Formas -->
+    <section class="hover">
+        <div class="hover__formas"></div>
+    </section>
+
+    <!-- Hover \ Formas -->
+    <section class="parrafo__hover">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus itaque rem, facere, distinctio soluta debitis id nam dolorem ratione nostrum? Labore?</p>
+    </section>
+
+    <!-- first-child \ last-child \ nth-child() -->
+    <section class="select__child">
+        <p>PERU</p>
+        <p>ECUADOR</p>
+        <p>ARGENTINA</p>
+        <p>BRASIL</p>
+    </section>
+
+    <!-- PSEUDO-ELEMENTOS -->
+        <!-- first-letter -->
+    <section class="content__text-element">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam quisquam perspiciatis quas unde veniam non accusantium expedita error odio ipsum ipsam numquam a ea rem dolorum, minima dolores voluptas?
+        Hic odio, est alias distinctio neque cumque similique fugiat nihil mollitia cupiditate perferendis quas repudiandae sint, eius, a praesentium aspernatur aliquid provident odit amet. Aliquam voluptatum fugit nobis illo ea.
+        Dolorum non eligendi fuga doloremque? Animi ducimus nam fuga soluta repellat totam facilis sapiente vitae non. Libero, harum reprehenderit! Fugit iste repellendus perspiciatis atque ratione aut ullam voluptates cum laboriosam.
+        Iusto et at expedita rem dolorum sunt consequatur, repudiandae odio distinctio ratione numquam fugit dignissimos dolorem eveniet vero eius aliquid. Aliquam velit minus neque? Alias, ratione? Omnis pariatur quidem explicabo.</p>
+        <p>Gorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur iure quidem accusantium nostrum maxime tenetur facilis enim.</p>
+        <p>Horem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur iure quidem accusantium nostrum maxime tenetur facilis enim.</p>
+        <p>Porem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur iure quidem accusantium nostrum maxime tenetur facilis enim.</p>
+    </section>
+
+        <!-- first-line -->
+    <section class="content__text-element-line">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur labore, velit eaque et dignissimos eos est nostrum hic doloribus praesentium perferendis minus at rerum quisquam eligendi. Dolor, vitae saepe.
+        Autem animi doloremque incidunt culpa nulla? Neque quibusdam pariatur enim officia autem ab libero iusto? Quisquam labore aperiam quae ad quas expedita harum. Porro in fugiat earum quibusdam dolores nobis.
+        Alias, delectus odio ipsum aliquam quod ea deserunt fugit cupiditate possimus recusandae voluptate temporibus eos itaque magni aperiam eveniet ex non est consequuntur eum. Aliquam praesentium reiciendis nulla maiores nemo.
+        Nulla itaque, consequatur, corporis nisi ex fuga at facilis rerum iste possimus ipsum voluptatum harum sit labore quo optio omnis necessitatibus? Ut tempora culpa molestias similique quidem assumenda molestiae laudantium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam labore recusandae dolor autem exercitationem vitae, odit repellendus iusto et numquam molestiae, vero quibusdam architecto aspernatur in ut, accusamus sequi reiciendis.
+        Debitis, praesentium amet fugiat non doloribus laudantium accusamus perspiciatis, reiciendis sed ipsa eius voluptas nulla atque omnis repellat quasi asperiores. Odit quisquam qui id voluptate voluptas magni dolore laborum quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex, eum et odit fugiat rem ea voluptas fugit, facilis nobis soluta autem accusamus. Ut quas voluptas nemo saepe at dolorem.
+        Ab adipisci quae impedit delectus provident, sint quasi numquam molestiae corporis ipsa atque earum eos! Facere iusto asperiores deleniti atque vero qui, ullam exercitationem minima quas, unde, consectetur nostrum inventore?
+        Dolorum voluptate aut non. Assumenda nulla quis similique, quidem numquam tempora nostrum est dolorum? Debitis, consequuntur tempore? Neque tempora quisquam laboriosam officiis, dolorem cum, deleniti veniam blanditiis nostrum repudiandae tempore.</p>
+        <p>Porem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur iure quidem accusantium nostrum maxime tenetur facilis enim.</p>
+    </section>
+
+        <!-- before \ after -->
+    <section class="content__text-element-beaf">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, temporibus.</p>
+    </section>
+    <section class="content__text-element-beaf-figure"></section>
+
+    <!-- ANIMATION -->
+    <section class="content__animation">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </section>
+
+    <!-- CASO PRACTICO \ 03 -->
+    <section class="banner__content">
+        <div class="banner__wrapper">
+
+            <!--Primer Slider-->
+            <div class="banner__wrapper-slider">
+                <div>
+                    <img src="img/desarrollo-web.jpg" alt="">
+                    <a href="#">NOSOTROS</a>
+                </div>
+            </div>
+
+            <!--Segundo Slider-->
+            <div class="banner__wrapper-slider">
+                <div>
+                    <img src="img/seo-web.jpg" alt="">
+                    <a href="#">CONTACTO</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
