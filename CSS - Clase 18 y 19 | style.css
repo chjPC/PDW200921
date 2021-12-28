@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;display: block;}
+a:hover{text-decoration: none!important;}
+
+ul,ol,li {list-style: none;}
+
+button{outline: none;cursor: pointer;}
+button:hover{outline: none;}
+
+input{outline: none;}
+input:hover{outline: none;}
+
+.main{
+    width: 100%;height: 100vh;min-width: 1300px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+
+    background: black;
+}
+.header__main{
+    width: 100%;height: 100%;
+    display: flex;justify-content: center;align-items: center;
+}
+.header__main > p{font-size: 82px;color: white;}
+
+/* MEDIA Q' */
+    /* TABLET */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .main{min-width: 100%;background: brown;}
+    .header__main > p{font-size: 46px;}
+}
+    /* CELULAR */
+@media screen and (min-width: 250px) and (max-width: 425px){
+    .main{min-width: 100%;background: cadetblue;}
+    .header__main > p{font-size: 26px;}
+}
+    /* NADA */
+@media screen and (min-width: 1px) and (max-width: 249px) {
+    .main{display: none;}
+}
